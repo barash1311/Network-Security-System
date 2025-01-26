@@ -21,7 +21,8 @@ from sklearn.ensemble import (
 
 from networksecurity.utils.ml_utils.metric.classification_metric import get_classification_score
 
-
+import dagshub
+dagshub.init(repo_owner='barash1311', repo_name='Network-Security-System', mlflow=True)
 
 
 
@@ -116,6 +117,7 @@ class ModelTrainer:
         
         Network_Model=NetworkModel(preprocessor=preprocessor,model=best_model)
         save_object(self.model_trainer_config.trained_model_file_path,obj=NetworkModel)
+        save_object("final_model/model.pkl",best_model)
         
         
         
