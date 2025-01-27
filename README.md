@@ -24,5 +24,6 @@ The Website Authenticity Detection project uses machine learning to analyze webs
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/website-authenticity-detection.git
-   cd website-authenticity-detection
+   git clone https://github.com/barash1311/Network-Security-System.git
+   cd NetworkData
+
